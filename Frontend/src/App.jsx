@@ -15,9 +15,7 @@ function App() {
     try {
       setLoading(true);
 
-      const response = await axios.post(
-        "http://127.0.0.1:5000/predict",
-        {
+      const response = await axios.post("https://ai-task-manager-backend-jv49.onrender.com/predict", {
           task: task
         }
       );
